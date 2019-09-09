@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Моноподы для селфи</title>
   </head>
   <body>
     <!-- ==== HEADER START ==== -->
@@ -11,15 +11,22 @@
         <!-- ==== NAVIGATON START ==== -->
         <nav class="main-nav">
           <!-- ==== LOGO ==== -->
-          <div class="logo logo--top">
+          <a class="logo logo--top" href="index.html" title="Вернуться на главную">
             <img src="#" alt="Логотип магазина Девайс">
-          </div>
+          </a>
           <!-- ==== SEARCH FORM ==== -->
           <p class="main-nav__search">Поиск по сайту</p>
           <!-- ==== USER-MENU START ==== -->
           <ul class="user-menu user-menu--top">
-            <li class="user-menu__item user-menu__item--login">
-              <a class="user-menu__link" href="#">Войти</a>
+            <li class="user-menu__item use-menu__item--login">
+              <ul class="user-menu__list">
+                <li class="user-menu__item user-menu__item--profile">
+                  <a class="user-menu__link" href="#" title="Валентин Петухов">Валентин Петухов</a>
+                </li>
+                <li class="user-menu__item--logout">
+                  <a class="user-menu__link" href="#" title="Выйти">Выйти</a>
+                </li>
+              </ul>
             </li>
             <li class="user-menu__item">
               <a class="user-menu__link" href="#">Сравнить</a>
@@ -38,9 +45,7 @@
                 <li class="site-menu__item">
                   <a class="site-menu__link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="site-menu__item">
-                  <a class="site-menu__link" href="catalog.html">Моноподы для селфи</a>
-                </li>
+                <li class="site-menu__item site-menu__item--active">Моноподы для селфи</li>
                 <li class="site-menu__item">
                   <a class="site-menu__link" href="#">Экшн-камеры</a>
                 </li>
@@ -72,45 +77,77 @@
       </div>
     </header>
     <!-- ==== HEADER END ==== -->
-    <main>
-      <h1>HTML Academy: Девайс</h1>
-      <!-- ==== INFO START ==== -->
-      <section class="info">
-        <div class="info__inner">
-          <!-- ==== ABOUT START ==== -->
-          <div class="info__about">
-            <h2 class="info__title">О нас</h2>
-            <p class="info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p class="info__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <ul class="info__list">
-              <li class="info__item">Деловые Линии</li>
-              <li class="info__item">Автотрейдинг</li>
-              <li class="info__item">ЖелДорЭкспедиция</li>
-            </ul>
-            <a class="info__link" href="#">Подробнее о нас</a>
-          </div>
-          <!-- ==== ABOUT END ==== -->
-          <!-- ==== CONTACTS START ==== -->
-          <div class="info__contacts">
-            <h2 class="info__title">Контакты</h2>
-            <p class="info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <p class="info__map">
-              <img src="#" alt="г. Москва, ул. Строителей, 15">
-            </p>
-            <a class="info__link" href="#">Напишите нам</a>
-          </div>
-          <!-- ==== CONTACTS END ==== -->
+    <main class="content">
+      <div class="content__inner">
+        <h1 class="content__title">Моноподы для селфи</h1>
+        <!-- ==== BREADCRUMBS START ==== -->
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">Моноподы для селфи</li>
+          </ul>
         </div>
-      </section>
-      <!-- ==== INFO END ==== -->
+        <!-- ==== BREADCRUMBS END ==== -->
+        <!-- ==== FILTERS START ==== -->
+        <div class="filters"></div>
+        <!-- ==== FILTERS END ==== -->
+        <!-- ==== CATALOG START ==== -->
+        <section class="catalog">
+          <h2>Каталог товаров</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <figure>
+                <img src="#" width="360" height="380" alt="Любительская селфи-палка">
+                <figcaption>
+                  <h3 class="catalog__title">Любительская селфи-палка</h3>
+                  <div class="catalog__price">500 руб.</div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="catalog__item">
+              <figure>
+                <img src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <figcaption>
+                    <h3 class="catalog__title">Профессиональная селфи-палка</h3>
+                    <div class="catalog__price">1 500 руб.</div>
+                  </figcaption>
+              </figure>
+            </li>
+            <li class="catalog__item">
+              <figure>
+                <img src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <figcaption>
+                  <h3 class="catalog__title">Непотопляемая селфи-палка</h3>
+                  <div class="catalog__price">2 500 руб.</div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="catalog__item">
+              <figure>
+                <img src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <figcaption>
+                  <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
+                  <div class="catalog__price">4 900 руб.</div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- ==== CATALOG END ==== -->
+      </div>
     </main>
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
       <div class="footer__inner">
         <!-- ==== LOGO ==== -->
-        <div class="logo logo--footer">
+        <a class="logo logo--footer" href="index.html" title="Вернуться на главную">
           <img src="#" alt="Логотип магазина Девайс">
-        </div>
+        </a>
         <!-- ==== USER-MENU START ==== -->
         <ul class="user-menu user-menu--footer">
           <li class="user-menu__item">
