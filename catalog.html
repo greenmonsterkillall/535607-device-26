@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Моноподы для селфи</title>
   </head>
   <body>
     <!-- ==== HEADER START ==== -->
     <header class="header">
       <!-- ==== LOGO ==== -->
-      <a class="header__logo logo">
+      <a class="header__logo logo" href="index.html" title="Вернуться на главную">
         <img src="#" alt="Логотип магазина «Девайс»">
       </a>
       <!-- ==== SEARCH ==== -->
@@ -19,7 +19,10 @@
       <!-- ==== USER-MENU START ==== -->
       <ul class="header__user-menu user-menu">
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Войти</a>
+          <a class="user-menu__link" href="#">Валентин Петухов</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#">Выйти</a>
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link" href="#">Сравнить</a>
@@ -40,9 +43,7 @@
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="catalog.html">Моноподы для селфи</a>
-                </li>
+                <li class="dropdown__item dropdown__item--active">Моноподы для селфи</li>
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Экшн-камеры</a>
                 </li>
@@ -78,41 +79,62 @@
     </header>
     <!-- ==== HEADER END ==== -->
     <main>
-      <h1 class="visually-hidden">HTML Academy: Девайс</h1>
-      <!-- ==== ABOUT START ==== -->
-      <section class="about">
-        <h2 class="about__title">О нас</h2>
-        <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="about__list">
-          <li class="about__item">Деловые Линии</li>
-          <li class="about__item">Автотрейдинг</li>
-          <li class="about__item">ЖелДорЭкспедиция</li>
+      <h1 class="main-title">Моноподы для селфи</h1>
+      <!-- ==== BREADCRUMBS START ==== -->
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--active">Моноподы для селфи</li>
+      </ul>
+      <!-- ==== BREADCRUMBS END ==== -->
+      <!-- ==== CATALOG START ==== -->
+      <section class="catalog">
+        <!-- ==== FILTERS START ==== -->
+        <div class="filters"></div>
+        <!-- ==== FILTERS END ==== -->
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img class="catalog__img" src="#" width="360" height="380" alt="Любительская селфи-палка">
+            <h3 class="catalog__title">Любительская селфи-палка</h3>
+            <p class="catalog__price">500 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+            <h3 class="catalog__title">Профессиональная селфи-палка</h3>
+            <p class="catalog__price">1 500 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <h3 class="catalog__title">Непотопляемая селфи-палка</h3>
+            <p class="catalog__price">2 500 руб.</p>
+          </li>
+          <li class="catalog__item catalog__item--new">
+            <img class="catalog__img" src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
+            <p class="catalog__price">4 900 руб.</p>
+          </li>
         </ul>
-        <a class="about__link button" href="#">Подробнее о нас</a>
       </section>
-      <!-- ==== ABOUT END ==== -->
-      <!-- ==== CONTACTS START ==== -->
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <p class="contacts__map">
-          <img src="#" alt="г. Москва, ул. Строителей, 15">
-        </p>
-        <a class="contacts__link button" href="#">Напишите нам</a>
-      </section>
-      <!-- ==== CONTACTS END ==== -->
+      <!-- ==== CATALOG END ==== -->
     </main>
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
       <!-- ==== LOGO ==== -->
-      <a class="footer__logo logo">
+      <a class="footer__logo logo" href="index.html" title="Вернуться на главную">
         <img src="#" alt="Логотип магазина «Девайс»">
       </a>
       <!-- ==== USER-MENU START ==== -->
       <ul class="footer__user-menu user-menu">
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Войти</a>
+          <a class="user-menu__link" href="#">Валентин Петухов</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="user-menu__link" href="#">Выйти</a>
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link" href="#">Сравнить</a>
