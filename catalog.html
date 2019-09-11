@@ -35,7 +35,7 @@
       <!-- ==== MAIN-NAV START ==== -->
       <nav class="header__nav main-nav">
         <ul class="main-nav__menu">
-          <li class="main-nav__item main-nav__item--dropdown">
+          <li class="main-nav__item main-nav__item--with-dropdown">
             <a class="main-nav__link" href="#">Каталог товаров</a>
             <!-- ==== DROPDOWN START ==== -->
             <div class="dropdown">
@@ -43,7 +43,9 @@
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="dropdown__item dropdown__item--active">Моноподы для селфи</li>
+                <li class="dropdown__item dropdown__item--active">
+                  <a class="dropdown__link">Моноподы для селфи</a>
+                </li>
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Экшн-камеры</a>
                 </li>
@@ -88,37 +90,85 @@
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Каталог товаров</a>
         </li>
-        <li class="breadcrumbs__item breadcrumbs__item--active">Моноподы для селфи</li>
+        <li class="breadcrumbs__item breadcrumbs__item--active">
+          <a class="breadcrumbs__link">Моноподы для селфи</a>
+        </li>
       </ul>
       <!-- ==== BREADCRUMBS END ==== -->
       <!-- ==== CATALOG START ==== -->
       <section class="catalog">
-        <!-- ==== FILTERS START ==== -->
-        <div class="filters"></div>
-        <!-- ==== FILTERS END ==== -->
         <h2 class="visually-hidden">Каталог товаров</h2>
+        <!-- ==== SORT START ==== -->
+        <!-- сортировка тоже будет с <form> ? -->
+        <section class="sort">
+          <h2 class="sort__title">Сортировка:</h2>
+          <ul class="sort__list">
+            <li class="sort__item">По цене</li>
+            <li class="sort__item">По типу</li>
+            <li class="sort__item">По популярности</li>
+          </ul>
+          <ul class="sort__list">
+            <li class="sort__item">По возростанию</li>
+            <li class="sort__item">По убыванию</li>
+          </ul>
+        </section>
+        <!-- ==== SORT END ==== -->
+        <!-- ==== FILTERS START ==== -->
+        <section class="filters">
+          <h2 class="filters__title">Фильтр:</h2>
+          <button class="filters__btn main-btn" type="submit">Показать</button>
+        </section>
+        <!-- ==== FILTERS END ==== -->
         <ul class="catalog__list">
           <li class="catalog__item">
             <img class="catalog__img" src="#" width="360" height="380" alt="Любительская селфи-палка">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <p class="catalog__price">500 руб.</p>
+            <!-- обернуть в <div> или сделать списком? -->
+            <button class="catalog__btn main-btn">В корзину</button>
+            <button class="catalog__btn">Добавить к сравнению</button>
           </li>
           <li class="catalog__item">
             <img class="catalog__img" src="#" width="360" height="380" alt="Профессиональная селфи-палка">
             <h3 class="catalog__title">Профессиональная селфи-палка</h3>
             <p class="catalog__price">1 500 руб.</p>
+            <button class="catalog__btn main-btn">В корзину</button>
+            <button class="catalog__btn">Добавить к сравнению</button>
           </li>
           <li class="catalog__item">
             <img class="catalog__img" src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
             <h3 class="catalog__title">Непотопляемая селфи-палка</h3>
             <p class="catalog__price">2 500 руб.</p>
+            <button class="catalog__btn main-btn">В корзину</button>
+            <button class="catalog__btn">Добавить к сравнению</button>
           </li>
           <li class="catalog__item catalog__item--new">
             <img class="catalog__img" src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
             <p class="catalog__price">4 900 руб.</p>
+            <button class="catalog__btn main-btn">В корзину</button>
+            <button class="catalog__btn">Добавить к сравнению</button>
           </li>
         </ul>
+        <!-- ==== PAGINATION START ==== -->
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">Назад</a>
+          </li>
+          <li class="pagination__item pagination__item--active">
+            <a class="pagination__link">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">Вперед</a>
+          </li>
+        </ul>
+        <!-- ==== PAGINATION END ==== -->
       </section>
       <!-- ==== CATALOG END ==== -->
     </main>

@@ -32,7 +32,7 @@
       <!-- ==== MAIN-NAV START ==== -->
       <nav class="header__nav main-nav">
         <ul class="main-nav__menu">
-          <li class="main-nav__item main-nav__item--dropdown">
+          <li class="main-nav__item main-nav__item--with-dropdown">
             <a class="main-nav__link" href="#">Каталог товаров</a>
             <!-- ==== DROPDOWN START ==== -->
             <div class="dropdown">
@@ -79,29 +79,218 @@
     <!-- ==== HEADER END ==== -->
     <main>
       <h1 class="visually-hidden">HTML Academy: Девайс</h1>
-      <!-- ==== ABOUT START ==== -->
-      <section class="about">
-        <h2 class="about__title">О нас</h2>
-        <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="about__list">
-          <li class="about__item">Деловые Линии</li>
-          <li class="about__item">Автотрейдинг</li>
-          <li class="about__item">ЖелДорЭкспедиция</li>
+      <!-- ==== CAROUSEL START ==== -->
+      <section class="carousel">
+        <!-- ==== CONTROLS START ==== -->
+        <ul class="carousel__controls">
+          <li class="carousel__control carousel__control--active">
+            <button class="carousel__btn" type="button" value="0">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+          </li>
+          <li class="carousel__control">
+            <button class="carousel__btn" type="button" value="1">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+          </li>
+          <li class="carousel__control">
+            <button class="carousel__btn" type="button" value="2">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </li>
         </ul>
-        <a class="about__link button" href="#">Подробнее о нас</a>
+        <!-- ==== CONTROLS END ==== -->
+        <!-- ==== SLIDES START ==== -->
+        <ul class="carousel__slides">
+          <!-- ==== SLIDE #1 ==== -->
+          <li class="carousel__slide carousel__slide--active">
+            <div class="carousel__description">
+              <h2 class="carousel__title">Делай селфи, как Бен Стиллер! </h2>
+              <p class="carousel__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="carousel__link main-btn" href="#">Подробнее</a>
+              <table class="carousel__table">
+                <tbody>
+                  <tr>
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                  <tr>
+                    <th>Длина палки</th>
+                    <th>Вес палки</th>
+                    <th>Материал</th>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Или списком, что-то в этом духе -->
+              <!-- <ul class="carousel__list">
+                <li class="carousel__item">Длина палки <big>8,5 м</big></li>
+                <li class="carousel__item">Вес палки <big>5 кг</big></li>
+                <li class="carousel__item">Материал <big>Карбон</big></li>
+              </ul> -->
+            </div>
+            <div class="carousel__img">
+              <img src="#" alt="Самая длинная палка для селфи">
+            </div>
+          </li>
+          <!-- ==== SLIDE #2 ==== -->
+          <li class="carousel__slide">
+            <div class="carousel__description">
+              <h2 class="carousel__title">Худеем правильно!</h2>
+              <p class="carousel__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="carousel__link main-btn" href="#">Подробнее</a>
+              <table class="carousel__table">
+                <tbody>
+                  <tr>
+                    <td>48 часов</td>
+                  </tr>
+                  <tr>
+                    <th>Без подзарядки</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="carousel__img">
+              <img src="#" alt="Мотивирующий фитнес-браслет">
+            </div>
+          </li>
+          <!-- ==== SLIDE #3 ==== -->
+          <li class="carousel__slide">
+            <div class="carousel__description">
+              <h2 class="carousel__title">Порхает как бабочка, жалит как пчела!</h2>
+              <p class="carousel__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="carousel__link main-btn" href="#">Подробнее</a>
+              <table class="carousel__table">
+                <tbody>
+                  <tr>
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                  <tr>
+                    <th>Дальность полета</th>
+                    <th>Радиус поражения</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="carousel__img">
+              <img src="#" alt="Квадрокоптер оснащенный мощным лазером">
+            </div>
+          </li>
+        </ul>
+        <!-- ==== SLIDES END ==== -->
       </section>
-      <!-- ==== ABOUT END ==== -->
-      <!-- ==== CONTACTS START ==== -->
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <p class="contacts__map">
-          <img src="#" alt="г. Москва, ул. Строителей, 15">
-        </p>
-        <a class="contacts__link button" href="#">Напишите нам</a>
+      <!-- ==== CAROUSEL END ==== -->
+      <!-- ==== POPULAR START ==== -->
+      <section class="popular">
+        <h2 class="visually-hidden">Популярные категории</h2>
+        <ul class="popular__list">
+          <li class="popular__item">
+            <a class="popular__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="#">Умные часы</a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
       </section>
-      <!-- ==== CONTACTS END ==== -->
+      <!-- ==== POPULAR END ==== -->
+      <!-- ==== SERVICES START ==== -->
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <!-- ==== CONTROLS START ==== -->
+        <ul class="services__controls">
+          <li class="services__item services__item--active">
+            <button class="services__btn main-btn" type="button" value="0">Доставка</button>
+          </li>
+          <li class="services__item">
+            <button class="services__btn main-btn" type="button" value="1">Гарантия</button>
+          </li>
+          <li class="services__item">
+            <button class="services__btn main-btn" type="button" value="2">Кредит</button>
+          </li>
+        </ul>
+        <!-- ==== CONTROLS END ==== -->
+        <!-- ==== TABS START ==== -->
+        <ul class="services__tabs">
+          <li class="services__tab services__tab--active">
+            <h3 class="services__title">Доставка</h3>
+            <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="services__tab">
+            <h3 class="services__title">Гарантия</h3>
+            <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </li>
+          <li class="services__tab">
+            <h3 class="services__title">Кредит</h3>
+            <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
+        <!-- ==== TABS END ==== -->
+      </section>
+      <!-- ==== SERVICES END ==== -->
+      <!-- ==== BRANDS START ==== -->
+      <section class="brands">
+        <h2 class="visually-hidden">Бренды</h2>
+        <ul class="brands__list">
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="#" alt="Логотип «Dji»">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="#" alt="Логотип «Sp Gadjets»">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="#" alt="Логотип «Go Pro»">
+            </a>
+          </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="#" alt="Логотип «Vive»">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ==== BRANDS END ==== -->
+      <!-- ==== CONTENT START ==== -->
+      <!-- насчет названия не уверен -->
+      <section class="content">
+        <div class="content__column">
+          <h2 class="content__title">О нас</h2>
+          <p class="content__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="content__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="content__list">
+            <li class="content__item">Деловые Линии</li>
+            <li class="content__item">Автотрейдинг</li>
+            <li class="content__item">ЖелДорЭкспедиция</li>
+          </ul>
+        </div>
+        <div class="content__column">
+          <a class="content__link main-btn" href="#">Подробнее о нас</a>
+          <h2 class="content__title">Контакты</h2>
+          <p class="content__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <p class="content__map">
+            <img src="#" alt="г. Москва, ул. Строителей, 15">
+          </p>
+          <a class="content__link main-btn" href="#">Напишите нам</a>
+        </div>
+      </section>
+      <!-- ==== CONTENT END ==== -->
     </main>
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
@@ -171,5 +360,22 @@
       </address>
     </footer>
     <!-- ==== FOOTER END ==== -->
+    <!-- ==== MODAL START ==== -->
+    <!-- ==== FEEDBACK ==== -->
+    <section class="modal modal--feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <button class="modal__btn main-btn" type="submit">Отправить</button>
+    </section>
+    <!-- ==== MAP ==== -->
+    <section class="modal modal--map">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    <!-- ==== MODAL END ==== -->
   </body>
 </html>
