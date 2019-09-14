@@ -35,7 +35,7 @@
       <!-- ==== MAIN-NAV START ==== -->
       <nav class="header__nav main-nav">
         <ul class="main-nav__menu">
-          <li class="main-nav__item main-nav__item--dropdown">
+          <li class="main-nav__item main-nav__item--with-dropdown">
             <a class="main-nav__link" href="#">Каталог товаров</a>
             <!-- ==== DROPDOWN START ==== -->
             <div class="dropdown">
@@ -43,7 +43,9 @@
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="dropdown__item dropdown__item--active">Моноподы для селфи</li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link">Моноподы для селфи</a>
+                </li>
                 <li class="dropdown__item">
                   <a class="dropdown__link" href="#">Экшн-камеры</a>
                 </li>
@@ -88,37 +90,121 @@
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Каталог товаров</a>
         </li>
-        <li class="breadcrumbs__item breadcrumbs__item--active">Моноподы для селфи</li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Моноподы для селфи</a>
+        </li>
       </ul>
       <!-- ==== BREADCRUMBS END ==== -->
       <!-- ==== CATALOG START ==== -->
       <section class="catalog">
+        <h2 class="sr-only">Каталог товаров</h2>
+        <!-- ==== SORT START ==== -->
+        <div class="sort">
+          <h2 class="sort__title">Сортировка:</h2>
+          <ul class="sort__list">
+            <li class="sort__item">
+              <a class="sort__link sort__link--active" href="#">По цене</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link" href="#">По типу</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link" href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort__list">
+            <li class="sort__item">
+              <a class="sort__link" href="#">По возростанию</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link sort__link--active" href="#">По убыванию</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ==== SORT END ==== -->
         <!-- ==== FILTERS START ==== -->
-        <div class="filters"></div>
+        <div class="filters">
+          <h2 class="filters__title">Фильтр:</h2>
+          <button class="filters__btn main-btn" type="submit">Показать</button>
+        </div>
         <!-- ==== FILTERS END ==== -->
-        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <img class="catalog__img" src="#" width="360" height="380" alt="Любительская селфи-палка">
-            <h3 class="catalog__title">Любительская селфи-палка</h3>
-            <p class="catalog__price">500 руб.</p>
+          <!-- ==== CARD #1 ==== -->
+          <li class="catalog__item card">
+            <img class="card__img" src="#" width="360" height="380" alt="Любительская селфи-палка">
+            <h3 class="card__title">Любительская селфи-палка</h3>
+            <p class="card__price">500 руб.</p>
+            <ul class="card__menu">
+              <li class="card__item">
+                <a class="card__link main-btn">В корзину</a>
+              </li>
+              <li class="card__item">
+                <a class="card__link">Добавить к сравнению</a>
+              </li>
+            </ul>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__img" src="#" width="360" height="380" alt="Профессиональная селфи-палка">
-            <h3 class="catalog__title">Профессиональная селфи-палка</h3>
-            <p class="catalog__price">1 500 руб.</p>
+          <!-- ==== CARD #2 ==== -->
+          <li class="catalog__item card">
+            <img class="card__img" src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+            <h3 class="card__title">Профессиональная селфи-палка</h3>
+            <p class="card__price">1 500 руб.</p>
+            <ul class="card__menu">
+              <li class="card__item">
+                <a class="card__link main-btn">В корзину</a>
+              </li>
+              <li class="card__item">
+                <a class="card__link">Добавить к сравнению</a>
+              </li>
+            </ul>
           </li>
-          <li class="catalog__item">
-            <img class="catalog__img" src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
-            <h3 class="catalog__title">Непотопляемая селфи-палка</h3>
-            <p class="catalog__price">2 500 руб.</p>
+          <!-- ==== CARD #3 ==== -->
+          <li class="catalog__item card">
+            <img class="card__img" src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <h3 class="card__title">Непотопляемая селфи-палка</h3>
+            <p class="card__price">2 500 руб.</p>
+            <ul class="card__menu">
+              <li class="card__item">
+                <a class="card__link main-btn">В корзину</a>
+              </li>
+              <li class="card__item">
+                <a class="card__link">Добавить к сравнению</a>
+              </li>
+            </ul>
           </li>
-          <li class="catalog__item catalog__item--new">
-            <img class="catalog__img" src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
-            <p class="catalog__price">4 900 руб.</p>
+          <!-- ==== CARD #4 ==== -->
+          <li class="catalog__item card card--new">
+            <img class="card__img" src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <h3 class="card__title">Селфи-палка «Следуй за мной»</h3>
+            <p class="card__price">4 900 руб.</p>
+            <ul class="card__menu">
+              <li class="card__item">
+                <a class="card__link main-btn">В корзину</a>
+              </li>
+              <li class="card__item">
+                <a class="card__link">Добавить к сравнению</a>
+              </li>
+            </ul>
           </li>
         </ul>
+        <!-- ==== PAGINATION START ==== -->
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">Назад</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">Вперед</a>
+          </li>
+        </ul>
+        <!-- ==== PAGINATION END ==== -->
       </section>
       <!-- ==== CATALOG END ==== -->
     </main>
@@ -165,21 +251,21 @@
       <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <!-- ==== SOCIAL START ==== -->
       <div class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <h2 class="sr-only">Мы в социальных сетях</h2>
         <ul class="social__menu">
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Наш Фейсбук</span>
+              <span class="sr-only">Наш Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Наш Инстаграм</span>
+              <span class="sr-only">Наш Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Наш Твиттер</span>
+              <span class="sr-only">Наш Твиттер</span>
             </a>
           </li>
         </ul>
