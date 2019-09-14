@@ -8,27 +8,58 @@
     <!-- ==== HEADER START ==== -->
     <header class="header">
       <!-- ==== LOGO ==== -->
-      <a class="header__logo logo" href="index.html" title="Вернуться на главную">
-        <img src="#" alt="Логотип магазина «Девайс»">
+      <a class="header__logo logo" href="index.html">
+        <svg width="164" height="35">
+          <use xlink:href="img/sprites/inline.svg#logo"></use>
+        </svg>
       </a>
       <!-- ==== SEARCH ==== -->
       <form class="header__search search" action="#">
-        <input class="search__field" type="search" placeholder="Поиск по сайту">
+        <label class="search__label">
+          <svg class="search__icon" width="16" height="16">
+            <use xlink:href="img/sprites/inline.svg#icon-search"></use>
+          </svg>
+          <input class="search__field" type="search" placeholder="Поиск по сайту" required>
+        </label>
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <!-- ==== USER-MENU START ==== -->
       <ul class="header__user-menu user-menu">
+        <!-- ==== USER ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Валентин Петухов</a>
+          <a class="user-menu__link" href="#">
+            <span class="user-menu__icon">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprites/inline.svg#icon-user"></use>
+              </svg>
+            </span>
+            <span>Валентин Петухов</span>
+          </a>
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link" href="#">Выйти</a>
         </li>
+        <!-- ==== COMPARE ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Сравнить</a>
+          <a class="user-menu__link" href="#">
+            <span class="user-menu__icon">
+              <svg width="10" height="10">
+                <use xlink:href="img/sprites/inline.svg#icon-compare"></use>
+              </svg>
+            </span>
+            <span>Сравнить</span>
+          </a>
         </li>
+        <!-- ==== CART ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Корзина</a>
+          <a class="user-menu__link" href="#">
+            <span class="user-menu__icon">
+              <svg width="12" height="12">
+                <use xlink:href="img/sprites/inline.svg#icon-cart"></use>
+              </svg>
+            </span>
+            <span>Корзина</span>
+          </a>
         </li>
       </ul>
       <!-- ==== USER-MENU END ==== -->
@@ -131,7 +162,10 @@
         <ul class="catalog__list">
           <!-- ==== CARD #1 ==== -->
           <li class="catalog__item card">
-            <img class="card__img" src="#" width="360" height="380" alt="Любительская селфи-палка">
+            <picture class="card__img">
+              <source type="image/webp" srcset="img/catalog/item-1.webp, img/catalog/item-1@2x.webp 2x, img/catalog/item-1@3x.webp 3x">
+              <img src="img/catalog/item-1.jpg" srcset="img/catalog/item-1@2x.jpg 2x, img/catalog/item-1@3x.jpg 3x" width="360" height="380" alt="Любительская селфи-палка">
+            </picture>
             <h3 class="card__title">Любительская селфи-палка</h3>
             <p class="card__price">500 руб.</p>
             <ul class="card__menu">
@@ -145,7 +179,10 @@
           </li>
           <!-- ==== CARD #2 ==== -->
           <li class="catalog__item card">
-            <img class="card__img" src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+            <picture class="card__img">
+              <source type="image/webp" srcset="img/catalog/item-2.webp, img/catalog/item-2@2x.webp 2x, img/catalog/item-2@3x.webp 3x">
+              <img src="img/catalog/item-2.jpg" srcset="img/catalog/item-2@2x.jpg 2x, img/catalog/item-2@3x.jpg 3x" width="360" height="380" alt="Профессиональная селфи-палка">
+            </picture>
             <h3 class="card__title">Профессиональная селфи-палка</h3>
             <p class="card__price">1 500 руб.</p>
             <ul class="card__menu">
@@ -159,7 +196,10 @@
           </li>
           <!-- ==== CARD #3 ==== -->
           <li class="catalog__item card">
-            <img class="card__img" src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <picture class="card__img">
+              <source type="image/webp" srcset="img/catalog/item-3.webp, img/catalog/item-3@2x.webp 2x, img/catalog/item-3@3x.webp 3x">
+              <img src="img/catalog/item-3.jpg" srcset="img/catalog/item-3@2x.jpg 2x, img/catalog/item-3@3x.jpg 3x" width="360" height="380" alt="Непотопляемая селфи-палка">
+            </picture>
             <h3 class="card__title">Непотопляемая селфи-палка</h3>
             <p class="card__price">2 500 руб.</p>
             <ul class="card__menu">
@@ -173,7 +213,10 @@
           </li>
           <!-- ==== CARD #4 ==== -->
           <li class="catalog__item card card--new">
-            <img class="card__img" src="#" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <picture class="card__img">
+              <source type="image/webp" srcset="img/catalog/item-4.webp, img/catalog/item-4@2x.webp 2x, img/catalog/item-4@3x.webp 3x">
+              <img src="img/catalog/item-4.jpg" srcset="img/catalog/item-4@2x.jpg 2x, img/catalog/item-4@3x.jpg 3x" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            </picture>
             <h3 class="card__title">Селфи-палка «Следуй за мной»</h3>
             <p class="card__price">4 900 руб.</p>
             <ul class="card__menu">
@@ -211,22 +254,48 @@
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
       <!-- ==== LOGO ==== -->
-      <a class="footer__logo logo" href="index.html" title="Вернуться на главную">
-        <img src="#" alt="Логотип магазина «Девайс»">
+      <a class="footer__logo logo" href="index.html">
+        <svg width="164" height="35">
+          <use xlink:href="img/sprites/inline.svg#logo"></use>
+        </svg>
       </a>
       <!-- ==== USER-MENU START ==== -->
       <ul class="footer__user-menu user-menu">
+        <!-- ==== USER ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Валентин Петухов</a>
+          <a class="user-menu__link" href="#">
+            <span class="user-menu__icon">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprites/inline.svg#icon-user"></use>
+              </svg>
+            </span>
+            <span>Валентин Петухов</span>
+          </a>
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link" href="#">Выйти</a>
         </li>
+        <!-- ==== COMPARE ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Сравнить</a>
+          <a class="user-menu__link" href="#">
+            <span class="user-menu__icon">
+              <svg width="10" height="10">
+                <use xlink:href="img/sprites/inline.svg#icon-compare"></use>
+              </svg>
+            </span>
+            <span>Сравнить</span>
+          </a>
         </li>
+        <!-- ==== CART ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Корзина</a>
+          <a class="user-menu__link" href="#">
+            <span class="user-menu__icon">
+              <svg width="12" height="12">
+                <use xlink:href="img/sprites/inline.svg#icon-cart"></use>
+              </svg>
+            </span>
+            <span>Корзина</span>
+          </a>
         </li>
       </ul>
       <!-- ==== USER-MENU END ==== -->
@@ -251,21 +320,36 @@
       <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <!-- ==== SOCIAL START ==== -->
       <div class="social">
-        <h2 class="sr-only">Мы в социальных сетях</h2>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__menu">
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="sr-only">Наш Фейсбук</span>
+              <span class="social__icon">
+                <svg width="32" height="32">
+                  <use xlink:href="img/sprites/inline.svg#icon-fb"></use>
+                </svg>
+              </span>
+              <span class="visually-hidden">Наш Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="sr-only">Наш Инстаграм</span>
+              <span class="social__icon">
+                <svg width="32" height="32">
+                  <use xlink:href="img/sprites/inline.svg#icon-instagram"></use>
+                </svg>
+              </span>
+              <span class="visually-hidden">Наш Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="sr-only">Наш Твиттер</span>
+              <span class="social__icon">
+                <svg width="32" height="32">
+                  <use xlink:href="img/sprites/inline.svg#icon-twitter"></use>
+                </svg>
+              </span>
+              <span class="visually-hidden">Наш Твиттер</span>
             </a>
           </li>
         </ul>
@@ -274,7 +358,12 @@
       <!-- ==== DEVELOPER ==== -->
       <address class="developer">
         <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss" title="«HTML и CSS, уровень 1.»">
-          <img class="developer__logo" src="#" alt="Логотип «HTML Academy»">
+          <span class="developer__logo">
+            <svg width="26.943" height="34.09">
+              <use xlink:href="img/sprites/inline.svg#logo-html"></use>
+            </svg>
+          </span>
+          <span class="sr-only">HTML Academy</span>
         </a>
       </address>
     </footer>
