@@ -84,17 +84,17 @@
         <!-- ==== CONTROLS START ==== -->
         <ul class="carousel__controls">
           <li class="carousel__control carousel__control--active">
-            <button class="carousel__btn" type="button" value="0">
+            <button class="carousel__btn" type="button">
               <span class="visually-hidden">Первый слайд</span>
             </button>
           </li>
           <li class="carousel__control">
-            <button class="carousel__btn" type="button" value="1">
+            <button class="carousel__btn" type="button">
               <span class="visually-hidden">Второй слайд</span>
             </button>
           </li>
           <li class="carousel__control">
-            <button class="carousel__btn" type="button" value="2">
+            <button class="carousel__btn" type="button">
               <span class="visually-hidden">Третий слайд</span>
             </button>
           </li>
@@ -102,80 +102,56 @@
         <!-- ==== CONTROLS END ==== -->
         <!-- ==== SLIDES START ==== -->
         <ul class="carousel__slides">
-          <!-- ==== SLIDE #1 ==== -->
           <li class="carousel__slide carousel__slide--active">
-            <div class="carousel__description">
-              <h2 class="carousel__title">Делай селфи, как Бен Стиллер! </h2>
-              <p class="carousel__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="carousel__link main-btn" href="#">Подробнее</a>
-              <table class="carousel__table">
-                <tbody>
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- Или списком, что-то в этом духе -->
-              <!-- <ul class="carousel__list">
-                <li class="carousel__item">Длина палки <big>8,5 м</big></li>
-                <li class="carousel__item">Вес палки <big>5 кг</big></li>
-                <li class="carousel__item">Материал <big>Карбон</big></li>
-              </ul> -->
-            </div>
-            <div class="carousel__img">
-              <img src="#" alt="Самая длинная палка для селфи">
-            </div>
+            <!-- ==== SLIDE #1 ==== -->
+            <figure class="slide">
+              <h2 class="slide__title main-title">Делай селфи, как Бен Стиллер! </h2>
+              <figcaption class="slide__description">
+                <p class="slide__text main-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="slide__link main-btn" href="#">Подробнее</a>
+                <dl class="slide__list">
+                  <dt>Длина палки</dt>
+                  <dd>8,5 м</big></dd>
+                  <dt>Вес палки</dt>
+                  <dd>5 кг</dd>
+                  <dt>Материал</dt>
+                  <dd>Карбон</dd>
+                </dl>
+              </figcaption>
+              <img class="slide__img" src="#" alt="Самая длинная палка для селфи">
+            </figure>
           </li>
-          <!-- ==== SLIDE #2 ==== -->
           <li class="carousel__slide">
-            <div class="carousel__description">
-              <h2 class="carousel__title">Худеем правильно!</h2>
-              <p class="carousel__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a class="carousel__link main-btn" href="#">Подробнее</a>
-              <table class="carousel__table">
-                <tbody>
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
-                    <th>Без подзарядки</th>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="carousel__img">
-              <img src="#" alt="Мотивирующий фитнес-браслет">
-            </div>
+            <!-- ==== SLIDE #2 ==== -->
+            <figure class="slide">
+              <figcaption class="slide__description">
+                <h2 class="slide__title main-title">Худеем правильно!</h2>
+                <p class="slide__text main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a class="slide__link main-btn" href="#">Подробнее</a>
+                <dl class="slide__list">
+                  <dt>Без подзарядки</dt>
+                  <dd>48 часов</dd>
+                </dl>
+              </figcaption>
+              <img class="slide__img" src="#" alt="Мотивирующий фитнес-браслет">
+            </figure>
           </li>
-          <!-- ==== SLIDE #3 ==== -->
           <li class="carousel__slide">
-            <div class="carousel__description">
-              <h2 class="carousel__title">Порхает как бабочка, жалит как пчела!</h2>
-              <p class="carousel__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="carousel__link main-btn" href="#">Подробнее</a>
-              <table class="carousel__table">
-                <tbody>
-                  <tr>
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr>
-                    <th>Дальность полета</th>
-                    <th>Радиус поражения</th>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="carousel__img">
-              <img src="#" alt="Квадрокоптер оснащенный мощным лазером">
-            </div>
+            <!-- ==== SLIDE #3 ==== -->
+            <figure class="slide">
+              <figcaption class="slide__description">
+                <h2 class="slide__title main-title">Порхает как бабочка, жалит как пчела!</h2>
+                <p class="slide__text main-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="slide__link main-btn" href="#">Подробнее</a>
+                <dl class="slide__list">
+                  <dt>Дальность полета</dt>
+                  <dd>800 м</dd>
+                  <dt>Радиус поражения</dt>
+                  <dd>50 м</dd>
+                </dl>
+              </figcaption>
+              <img class="slide__img" src="#" alt="Квадрокоптер оснащенный мощным лазером">
+            </figure>
           </li>
         </ul>
         <!-- ==== SLIDES END ==== -->
@@ -212,29 +188,29 @@
         <!-- ==== CONTROLS START ==== -->
         <ul class="services__controls">
           <li class="services__item services__item--active">
-            <button class="services__btn main-btn" type="button" value="0">Доставка</button>
+            <a class="services__link main-btn" href="#">Доставка</a>
           </li>
           <li class="services__item">
-            <button class="services__btn main-btn" type="button" value="1">Гарантия</button>
+            <a class="services__link main-btn" href="#">Гарантия</a>
           </li>
           <li class="services__item">
-            <button class="services__btn main-btn" type="button" value="2">Кредит</button>
+            <a class="services__link main-btn" href="#">Кредит</a>
           </li>
         </ul>
         <!-- ==== CONTROLS END ==== -->
         <!-- ==== TABS START ==== -->
         <ul class="services__tabs">
           <li class="services__tab services__tab--active">
-            <h3 class="services__title">Доставка</h3>
-            <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <h3 class="services__title main-title">Доставка</h3>
+            <p class="services__text main-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="services__tab">
-            <h3 class="services__title">Гарантия</h3>
-            <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <h3 class="services__title main-title">Гарантия</h3>
+            <p class="services__text main-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
           <li class="services__tab">
-            <h3 class="services__title">Кредит</h3>
-            <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <h3 class="services__title main-title">Кредит</h3>
+            <p class="services__text main-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
         <!-- ==== TABS END ==== -->
@@ -267,30 +243,49 @@
         </ul>
       </section>
       <!-- ==== BRANDS END ==== -->
-      <!-- ==== CONTENT START ==== -->
-      <!-- насчет названия не уверен -->
-      <section class="content">
-        <div class="content__column">
-          <h2 class="content__title">О нас</h2>
-          <p class="content__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="content__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="content__list">
-            <li class="content__item">Деловые Линии</li>
-            <li class="content__item">Автотрейдинг</li>
-            <li class="content__item">ЖелДорЭкспедиция</li>
+      <div class="row">
+        <!-- ==== ABOUT START ==== -->
+        <section class="about col">
+          <h2 class="about__title main-title">О нас</h2>
+          <p class="about__text main-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="about__text main-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="about__list">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+            <a class="about__link main-btn" href="#">Подробнее о нас</a>
           </ul>
-        </div>
-        <div class="content__column">
-          <a class="content__link main-btn" href="#">Подробнее о нас</a>
-          <h2 class="content__title">Контакты</h2>
-          <p class="content__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <p class="content__map">
+          <!-- ==== MODAL-FEEDBACK START ==== -->
+          <div class="about__feedback modal">
+            <h3 class="visually-hidden">Форма обратной связи</h3>
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <button class="modal__btn main-btn" type="submit">Отправить</button>
+          </div>
+          <!-- ==== MODAL-FEEDBACK END ==== -->
+        </section>
+        <!-- ==== ABOUT END ==== -->
+        <!-- ==== CONTACTS START ==== -->
+        <section class="contacts col">
+          <h2 class="contacts__title main-title">Контакты</h2>
+          <p class="contacts__text main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <div class="contacts__img">
             <img src="#" alt="г. Москва, ул. Строителей, 15">
-          </p>
-          <a class="content__link main-btn" href="#">Напишите нам</a>
-        </div>
-      </section>
-      <!-- ==== CONTENT END ==== -->
+          </div>
+          <a class="contacts__link main-btn" href="#">Напишите нам</a>
+          <!-- ==== MODAL-MAP START ==== -->
+          <div class="contacts__map modal">
+            <h3 class="visually-hidden">Как нас найти</h3>
+            <button class="modal__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <!-- ==== MODAL-MAP END ==== -->
+        </section>
+        <!-- ==== CONTACTS END ==== -->
+      </div>
+      <!-- ==== INFO END ==== -->
     </main>
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
@@ -360,22 +355,5 @@
       </address>
     </footer>
     <!-- ==== FOOTER END ==== -->
-    <!-- ==== MODAL START ==== -->
-    <!-- ==== FEEDBACK ==== -->
-    <section class="modal modal--feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <button class="modal__close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-      <button class="modal__btn main-btn" type="submit">Отправить</button>
-    </section>
-    <!-- ==== MAP ==== -->
-    <section class="modal modal--map">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <button class="modal__close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
-    <!-- ==== MODAL END ==== -->
   </body>
 </html>
