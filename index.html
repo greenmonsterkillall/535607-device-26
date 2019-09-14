@@ -78,24 +78,25 @@
     </header>
     <!-- ==== HEADER END ==== -->
     <main>
-      <h1 class="visually-hidden">HTML Academy: Девайс</h1>
+      <h1 class="sr-only">HTML Academy: Девайс</h1>
       <!-- ==== CAROUSEL START ==== -->
       <section class="carousel">
+        <h2 class="sr-only">Популярные товары</h2>
         <!-- ==== CONTROLS START ==== -->
         <ul class="carousel__controls">
           <li class="carousel__control carousel__control--active">
             <button class="carousel__btn" type="button">
-              <span class="visually-hidden">Первый слайд</span>
+              <span class="sr-only">Первый слайд</span>
             </button>
           </li>
           <li class="carousel__control">
             <button class="carousel__btn" type="button">
-              <span class="visually-hidden">Второй слайд</span>
+              <span class="sr-only">Второй слайд</span>
             </button>
           </li>
           <li class="carousel__control">
             <button class="carousel__btn" type="button">
-              <span class="visually-hidden">Третий слайд</span>
+              <span class="sr-only">Третий слайд</span>
             </button>
           </li>
         </ul>
@@ -105,9 +106,11 @@
           <li class="carousel__slide carousel__slide--active">
             <!-- ==== SLIDE #1 ==== -->
             <figure class="slide">
-              <img class="slide__img" src="#" alt="Самая длинная палка для селфи">
+              <div class="slide__img">
+                <img src="#" alt="Самая длинная палка для селфи">
+              </div>
               <figcaption class="slide__description">
-                <h2 class="slide__title main-title">Делай селфи, как Бен Стиллер!</h2>
+                <b class="slide__title main-title">Делай селфи, как Бен Стиллер!</b>
                 <p class="slide__text main-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="slide__link main-btn" href="#">Подробнее</a>
                 <dl class="slide__list">
@@ -124,9 +127,11 @@
           <li class="carousel__slide">
             <!-- ==== SLIDE #2 ==== -->
             <figure class="slide">
-              <img class="slide__img" src="#" alt="Мотивирующий фитнес-браслет">
+              <div class="slide__img">
+                <img src="#" alt="Мотивирующий фитнес-браслет">
+              </div>
               <figcaption class="slide__description">
-                <h2 class="slide__title main-title">Худеем правильно!</h2>
+                <b class="slide__title main-title">Худеем правильно!</b>
                 <p class="slide__text main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a class="slide__link main-btn" href="#">Подробнее</a>
                 <dl class="slide__list">
@@ -139,9 +144,11 @@
           <li class="carousel__slide">
             <!-- ==== SLIDE #3 ==== -->
             <figure class="slide">
-              <img class="slide__img" src="#" alt="Квадрокоптер оснащенный мощным лазером">
+              <div class="slide__img">
+                <img src="#" alt="Квадрокоптер оснащенный мощным лазером">
+              </div>
               <figcaption class="slide__description">
-                <h2 class="slide__title main-title">Порхает как бабочка, жалит как пчела!</h2>
+                <b class="slide__title main-title">Порхает как бабочка, жалит как пчела!</b>
                 <p class="slide__text main-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <a class="slide__link main-btn" href="#">Подробнее</a>
                 <dl class="slide__list">
@@ -159,7 +166,7 @@
       <!-- ==== CAROUSEL END ==== -->
       <!-- ==== POPULAR START ==== -->
       <section class="popular">
-        <h2 class="visually-hidden">Популярные категории</h2>
+        <h2 class="sr-only">Популярные категории</h2>
         <ul class="popular__list">
           <li class="popular__item">
             <a class="popular__link" href="#">Виртуальная реальность</a>
@@ -184,7 +191,7 @@
       <!-- ==== POPULAR END ==== -->
       <!-- ==== SERVICES START ==== -->
       <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
+        <h2 class="sr-only">Услуги</h2>
         <!-- ==== CONTROLS START ==== -->
         <ul class="services__controls">
           <li class="services__item services__item--active">
@@ -218,7 +225,7 @@
       <!-- ==== SERVICES END ==== -->
       <!-- ==== BRANDS START ==== -->
       <section class="brands">
-        <h2 class="visually-hidden">Бренды</h2>
+        <h2 class="sr-only">Бренды</h2>
         <ul class="brands__list">
           <li class="brands__item">
             <a class="brands__link" href="#">
@@ -250,20 +257,11 @@
           <p class="about__text main-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about__text main-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="about__list">
-            <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="about__item">Деловые Линии</li>
+            <li class="about__item">Автотрейдинг</li>
+            <li class="about__item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="about__link main-btn" href="#">Подробнее о нас</a>
-          <!-- ==== MODAL-FEEDBACK START ==== -->
-          <div class="about__feedback modal">
-            <h3 class="visually-hidden">Форма обратной связи</h3>
-            <button class="modal__close" type="button">
-              <span class="visually-hidden">Закрыть</span>
-            </button>
-            <button class="modal__btn main-btn" type="submit">Отправить</button>
-          </div>
-          <!-- ==== MODAL-FEEDBACK END ==== -->
         </section>
         <!-- ==== ABOUT END ==== -->
         <!-- ==== CONTACTS START ==== -->
@@ -274,11 +272,20 @@
             <img src="#" alt="г. Москва, ул. Строителей, 15">
           </div>
           <a class="contacts__link main-btn" href="#">Напишите нам</a>
+          <!-- ==== MODAL-FEEDBACK START ==== -->
+          <div class="contacts__feedback modal">
+            <h3 class="sr-only">Форма обратной связи</h3>
+            <button class="modal__close" type="button">
+              <span class="sr-only">Закрыть</span>
+            </button>
+            <button class="modal__btn main-btn" type="submit">Отправить</button>
+          </div>
+          <!-- ==== MODAL-FEEDBACK END ==== -->
           <!-- ==== MODAL-MAP START ==== -->
           <div class="contacts__map modal">
-            <h3 class="visually-hidden">Как нас найти</h3>
+            <h3 class="sr-only">Как нас найти</h3>
             <button class="modal__close" type="button">
-              <span class="visually-hidden">Закрыть</span>
+              <span class="sr-only">Закрыть</span>
             </button>
           </div>
           <!-- ==== MODAL-MAP END ==== -->
@@ -327,21 +334,21 @@
       <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <!-- ==== SOCIAL START ==== -->
       <div class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <h2 class="sr-only">Мы в социальных сетях</h2>
         <ul class="social__menu">
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Наш Фейсбук</span>
+              <span class="sr-only">Наш Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Наш Инстаграм</span>
+              <span class="sr-only">Наш Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <span class="visually-hidden">Наш Твиттер</span>
+              <span class="sr-only">Наш Твиттер</span>
             </a>
           </li>
         </ul>
