@@ -132,7 +132,10 @@
             <!-- ==== SLIDE #1 ==== -->
             <figure class="slide">
               <div class="slide__img">
-                <img src="#" alt="Самая длинная палка для селфи">
+                <picture>
+                  <source type="image/webp" srcset="img/carousel/slide-1.webp, img/carousel/slide-1@2x.webp 2x, img/carousel/slide-1@3x.webp 3x">
+                  <img src="img/carousel/slide-1.png" srcset="img/carousel/slide-1@2x.png 2x, img/carousel/slide-1@3x.png 3x" width="384" height="486" alt="Самая длинная палка для селфи">
+                </picture>
               </div>
               <figcaption class="slide__description">
                 <b class="slide__title main-title">Делай селфи, как Бен Стиллер!</b>
@@ -153,7 +156,10 @@
             <!-- ==== SLIDE #2 ==== -->
             <figure class="slide">
               <div class="slide__img">
-                <img src="#" alt="Мотивирующий фитнес-браслет">
+                <picture>
+                  <source type="image/webp" srcset="img/carousel/slide-2.webp, img/carousel/slide-2@2x.webp 2x, img/carousel/slide-2@3x.webp 3x">
+                  <img src="img/carousel/slide-2.png" srcset="img/carousel/slide-2@2x.png 2x, img/carousel/slide-2@3x.png 3x" width="385" height="485" alt="Самая длинная палка для селфи">
+                </picture>
               </div>
               <figcaption class="slide__description">
                 <b class="slide__title main-title">Худеем правильно!</b>
@@ -170,7 +176,10 @@
             <!-- ==== SLIDE #3 ==== -->
             <figure class="slide">
               <div class="slide__img">
-                <img src="#" alt="Квадрокоптер оснащенный мощным лазером">
+                <picture>
+                  <source type="image/webp" srcset="img/carousel/slide-3.webp, img/carousel/slide-3@2x.webp 2x, img/carousel/slide-3@3x.webp 3x">
+                  <img src="img/carousel/slide-3.png" srcset="img/carousel/slide-3@2x.png 2x, img/carousel/slide-3@3x.png 3x" width="526" height="334" alt="Самая длинная палка для селфи">
+                </picture>
               </div>
               <figcaption class="slide__description">
                 <b class="slide__title main-title">Порхает как бабочка, жалит как пчела!</b>
@@ -194,22 +203,52 @@
         <h2 class="sr-only">Популярные категории</h2>
         <ul class="popular__list">
           <li class="popular__item">
-            <a class="popular__link" href="#">Виртуальная реальность</a>
+            <a class="popular__link" href="#">
+              <svg class="popular__icon" width="97" height="55">
+                <use xlink:href="img/sprites/inline.svg#popular-vr"></use>
+              </svg>
+              Виртуальная реальность
+            </a>
           </li>
           <li class="popular__item">
-            <a class="popular__link" href="catalog.html">Моноподы для селфи</a>
+            <a class="popular__link" href="catalog.html">
+              <svg class="popular__icon" width="86" height="117">
+                <use xlink:href="img/sprites/inline.svg#popular-monopod"></use>
+              </svg>
+              Моноподы для селфи
+            </a>
           </li>
           <li class="popular__item">
-            <a class="popular__link" href="#">Экшн-камеры</a>
+            <a class="popular__link" href="#">
+              <svg class="popular__icon" width="71" height="87">
+                <use xlink:href="img/sprites/inline.svg#popular-camera"></use>
+              </svg>
+              Экшн-камеры
+            </a>
           </li>
           <li class="popular__item">
-            <a class="popular__link" href="#">Фитнес-браслеты</a>
+            <a class="popular__link" href="#">
+              <svg class="popular__icon" width="107" height="65">
+                <use xlink:href="img/sprites/inline.svg#popular-band"></use>
+              </svg>
+              Фитнес-браслеты
+            </a>
           </li>
           <li class="popular__item">
-            <a class="popular__link" href="#">Умные часы</a>
+            <a class="popular__link" href="#">
+              <svg class="popular__icon" width="56" height="98">
+                <use xlink:href="img/sprites/inline.svg#popular-watches"></use>
+              </svg>
+              Умные часы
+            </a>
           </li>
           <li class="popular__item">
-            <a class="popular__link" href="#">Квадрокоптеры</a>
+            <a class="popular__link" href="#">
+              <svg class="popular__icon" width="132" height="69">
+                <use xlink:href="img/sprites/inline.svg#popular-copter"></use>
+              </svg>
+              Квадрокоптеры
+            </a>
           </li>
         </ul>
       </section>
@@ -253,23 +292,35 @@
         <h2 class="sr-only">Бренды</h2>
         <ul class="brands__list">
           <li class="brands__item">
-            <a class="brands__link" href="#">
-              <img class="brands__img" src="#" alt="Логотип «Dji»">
+            <a class="brands__link" href="#" title="Сайт Dji">
+              <picture class="brands__img">
+                <source type="image/webp" srcset="img/brands/dji-logo.webp, img/brands/dji-logo@2x.webp 2x, img/brands/dji-logo@3x.webp 3x">
+                <img src="img/brands/dji-logo.jpg" srcset="img/brands/dji-logo@2x.jpg 2x, img/brands/dji-logo@3x.jpg 3x" width="260" height="100" alt="Логотип «Dji»">
+              </picture>
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__link" href="#">
-              <img class="brands__img" src="#" alt="Логотип «Sp Gadjets»">
+            <a class="brands__link" href="#" title="Сайт Sp Gadgets">
+              <picture class="brands__img">
+                <source type="image/webp" srcset="img/brands/sp-gadgets-logo.webp, img/brands/sp-gadgets-logo@2x.webp 2x, img/brands/sp-gadgets-logo@3x.webp 3x">
+                <img src="img/brands/sp-gadgets-logo.jpg" srcset="img/brands/sp-gadgets-logo@2x.jpg 2x, img/brands/sp-gadgets-logo@3x.jpg 3x" width="260" height="100" alt="Логотип «Sp Gadgets»">
+              </picture>
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__link" href="#">
-              <img class="brands__img" src="#" alt="Логотип «Go Pro»">
+            <a class="brands__link" href="#" title="Сайт Go Pro">
+              <picture class="brands__img">
+                <source type="image/webp" srcset="img/brands/go-pro-logo.webp, img/brands/go-pro-logo@2x.webp 2x, img/brands/go-pro-logo@3x.webp 3x">
+                <img src="img/brands/go-pro-logo.jpg" srcset="img/brands/go-pro-logo@2x.jpg 2x, img/brands/go-pro-logo@3x.jpg 3x" width="260" height="100" alt="Логотип «Go Pro»">
+              </picture>
             </a>
           </li>
           <li class="brands__item">
-            <a class="brands__link" href="#">
-              <img class="brands__img" src="#" alt="Логотип «Vive»">
+            <a class="brands__link" href="#" title="Сайт Vive">
+              <picture class="brands__img">
+                <source type="image/webp" srcset="img/brands/vive-logo.webp, img/brands/vive-logo@2x.webp 2x, img/brands/vive-logo@3x.webp 3x">
+                <img src="img/brands/vive-logo.jpg" srcset="img/brands/vive-logo@2x.jpg 2x, img/brands/vive-logo@3x.jpg 3x" width="260" height="100" alt="Логотип «Vive»">
+              </picture>
             </a>
           </li>
         </ul>
@@ -315,6 +366,12 @@
           <!-- ==== MODAL-MAP START ==== -->
           <div class="contacts__map modal">
             <h3 class="sr-only">Как нас найти</h3>
+            <div class="modal__img">
+              <picture>
+                <source type="image/webp" srcset="img/maps/map-big.webp, img/maps/map-big@2x.webp 2x, img/maps/map-big@3x.webp 3x">
+                <img src="img/maps/map-big.jpg" srcset="img/maps/map-big@2x.jpg 2x, img/maps/map-big@3x.jpg 3x" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
+              </picture>
+            </div>
             <button class="modal__close" type="button">
               <svg width="55" height="55">
                 <use xlink:href="img/sprites/inline.svg#icon-close"></use>
