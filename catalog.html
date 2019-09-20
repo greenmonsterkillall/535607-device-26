@@ -157,12 +157,56 @@
           </ul>
         </div>
         <!-- ==== SORT END ==== -->
-        <!-- ==== FILTERS START ==== -->
-        <div class="filters">
-          <h2 class="filters__title">Фильтр:</h2>
-          <button class="filters__btn main-btn" type="submit">Показать</button>
+        <!-- ==== FILTER START ==== -->
+        <div class="filter">
+          <h2 class="filter__title">Фильтр:</h2>
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+            <!-- ==== COLOR START ==== -->
+            <fieldset class="filter__fieldset">
+              <legend class="filter__subtitle">Цвет</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="sr-only" id="color-black" type="checkbox" name="color" value="black" checked>
+                  <label class="filter__check" for="color-black">Черный</label>
+                </li>
+                <li class="filter__item">
+                  <input class="sr-only" id="color-white" type="checkbox" name="color" value="white">
+                  <label class="filter__check" for="color-white">Белый</label>
+                </li>
+                <li class="filter__item">
+                  <input class="sr-only" id="color-blue" type="checkbox" name="color" value="blue" checked>
+                  <label class="filter__check" for="color-blue">Синий</label>
+                </li>
+                <li class="filter__item">
+                  <input class="sr-only" id="color-red" type="checkbox" name="color" value="red" checked>
+                  <label class="filter__check" for="color-red">Красный</label>
+                </li>
+                <li class="filter__item">
+                  <input class="sr-only" id="color-pink" type="checkbox" name="color" value="pink">
+                  <label class="filter__check" for="color-pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- ==== COLOR END ==== -->
+            <!-- ==== BLUETOOTH START ==== -->
+            <fieldset class="filter__fieldset">
+              <legend class="filter__subtitle">Bluetooth</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="sr-only" id="bluetooth+" type="radio" name="bluetooth" value="yes" checked>
+                  <label class="filter__radio" for="bluetooth-">Есть</label>
+                </li>
+                <li class="filter__item">
+                  <input class="sr-only" id="bluetooth-" type="radio" name="bluetooth" value="none">
+                  <label class="filter__radio" for="bluetooth-">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- ==== BLUETOOTH END ==== -->
+            <button class="filter__btn main-btn" type="submit">Показать</button>
+          </form>
         </div>
-        <!-- ==== FILTERS END ==== -->
+        <!-- ==== FILTER END ==== -->
         <ul class="catalog__list">
           <!-- ==== CARD #1 ==== -->
           <li class="catalog__item card">

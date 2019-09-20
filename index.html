@@ -14,12 +14,12 @@
         </svg>
       </a>
       <!-- ==== SEARCH ==== -->
-      <form class="header__search search" action="#">
+      <form class="header__search search" action="https://echo.htmlacademy.ru" method="get">
         <label class="search__label">
           <svg class="search__icon" width="16" height="16">
             <use xlink:href="img/sprites/inline.svg#icon-search"></use>
           </svg>
-          <input class="search__field" type="search" placeholder="Поиск по сайту" required>
+          <input class="search__field" type="search" name="search" placeholder="Поиск по сайту" required>
         </label>
         <button class="search__btn" type="submit">Найти</button>
       </form>
@@ -291,6 +291,7 @@
       <section class="brands">
         <h2 class="sr-only">Бренды</h2>
         <ul class="brands__list">
+          <!-- ==== ITEM #1 ==== -->
           <li class="brands__item">
             <a class="brands__link" href="#" title="Сайт Dji">
               <picture class="brands__img">
@@ -299,6 +300,7 @@
               </picture>
             </a>
           </li>
+          <!-- ==== ITEM #2 ==== -->
           <li class="brands__item">
             <a class="brands__link" href="#" title="Сайт Sp Gadgets">
               <picture class="brands__img">
@@ -307,6 +309,7 @@
               </picture>
             </a>
           </li>
+          <!-- ==== ITEM #3 ==== -->
           <li class="brands__item">
             <a class="brands__link" href="#" title="Сайт Go Pro">
               <picture class="brands__img">
@@ -315,6 +318,7 @@
               </picture>
             </a>
           </li>
+          <!-- ==== ITEM #4 ==== -->
           <li class="brands__item">
             <a class="brands__link" href="#" title="Сайт Vive">
               <picture class="brands__img">
@@ -344,29 +348,52 @@
         <section class="contacts col">
           <h2 class="contacts__title main-title">Контакты</h2>
           <p class="contacts__text main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <div class="contacts__img">
-            <picture>
-              <source type="image/webp" srcset="img/maps/map-small.webp, img/maps/map-small@2x.webp 2x, img/maps/map-small@3x.webp 3x">
-              <img src="img/maps/map-small.jpg" srcset="img/maps/map-small@2x.jpg 2x, img/maps/map-small@3x.jpg 3x" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
-            </picture>
-          </div>
+          <a class="contacts__link" href="#">
+            <div class="contacts__img">
+              <picture>
+                <source type="image/webp" srcset="img/maps/map-small.webp, img/maps/map-small@2x.webp 2x, img/maps/map-small@3x.webp 3x">
+                <img src="img/maps/map-small.jpg" srcset="img/maps/map-small@2x.jpg 2x, img/maps/map-small@3x.jpg 3x" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
+              </picture>
+            </div>
+          </a>
           <a class="contacts__link main-btn" href="#">Напишите нам</a>
           <!-- ==== MODAL-FEEDBACK START ==== -->
           <div class="contacts__feedback modal">
             <h3 class="sr-only">Форма обратной связи</h3>
+            <!-- ==== FORM START ==== -->
+            <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="feedback__fieldset">
+                <!-- ==== NAME ==== -->
+                <p class="feedback__item">
+                  <label class="feedback__label" for="feedback-name">Ваше имя:</label>
+                  <input class="feedback__field" id="feedback-name" name="name" type="text" placeholder="Имя Фамилия">
+                </p>
+                <!-- ==== E-MAIL ==== -->
+                <p class="feedback__item">
+                  <label class="feedback__label" for="feedback-email">Ваш e-mail:</label>
+                  <input class="feedback__field" id="feedback-email" name="email" type="email" placeholder="email@example.com">
+                </p>
+                <!-- ==== TEXT ==== -->
+                <p class="feedback__item">
+                  <label class="feedback__label" for="feedback-text">Текст письма:</label>
+                  <textarea class="feedback__text" id="feedback-text" name="text" rows="10" cols="80" placeholder="В свободной форме"></textarea>
+                </p>
+              </fieldset>
+              <button class="modal__btn main-btn" type="submit">Отправить</button>
+            </form>
+            <!-- ==== FORM END ==== -->
             <button class="modal__close" type="button">
               <svg width="55" height="55">
                 <use xlink:href="img/sprites/inline.svg#icon-close"></use>
               </svg>
               <span class="sr-only">Закрыть</span>
             </button>
-            <button class="modal__btn main-btn" type="submit">Отправить</button>
           </div>
           <!-- ==== MODAL-FEEDBACK END ==== -->
           <!-- ==== MODAL-MAP START ==== -->
           <div class="contacts__map modal">
             <h3 class="sr-only">Как нас найти</h3>
-            <div class="modal__img">
+            <div class="map">
               <picture>
                 <source type="image/webp" srcset="img/maps/map-big.webp, img/maps/map-big@2x.webp 2x, img/maps/map-big@3x.webp 3x">
                 <img src="img/maps/map-big.jpg" srcset="img/maps/map-big@2x.jpg 2x, img/maps/map-big@3x.jpg 3x" width="960" height="559" alt="г. Москва, ул. Строителей, 15">
