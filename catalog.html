@@ -3,44 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Моноподы для селфи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
     <!-- ==== HEADER START ==== -->
     <header class="header">
       <!-- ==== LOGO ==== -->
-      <a class="header__logo logo" href="index.html">
-        <svg width="164" height="35">
+      <a class="header__logo logo" href="index.html" aria-label="Вернуться на Главную">
+        <svg width="164" height="35" role="img" aria-label="Логотип магазина «Девайс»">
           <use xlink:href="img/sprites/inline.svg#logo"></use>
         </svg>
       </a>
       <!-- ==== SEARCH ==== -->
-      <form class="header__search search" action="#">
-        <label class="search__label">
-          <svg class="search__icon" width="16" height="16">
-            <use xlink:href="img/sprites/inline.svg#icon-search"></use>
-          </svg>
-          <input class="search__field" type="search" placeholder="Поиск по сайту" required>
-        </label>
+      <form class="header__search search" action="https://echo.htmlacademy.ru" method="get" role="search" aria-label="Поиск по сайту">
+        <input class="search__field" type="search" name="search" placeholder="Поиск по сайту" required>
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <!-- ==== USER-MENU START ==== -->
-      <ul class="header__user-menu user-menu">
+      <ul class="header__user-menu user-menu" role="menu" aria-label="Меню пользователя">
         <!-- ==== USER ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
-            <svg class="user-menu__icon" width="13" height="12">
+          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+            <svg class="user-menu__icon" width="13" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-user"></use>
             </svg>
             Валентин Петухов
           </a>
         </li>
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Выйти</a>
+          <a class="user-menu__link user-menu__link--logout" href="#" aria-label="Выйти из личного кабинета">Выйти</a>
         </li>
         <!-- ==== COMPARE ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
-            <svg class="user-menu__icon" width="10" height="10">
+          <a class="user-menu__link" href="#" aria-label="Перейти к сравнению товаров">
+            <svg class="user-menu__icon" width="10" height="10" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-compare"></use>
             </svg>
             Сравнить
@@ -48,8 +45,8 @@
         </li>
         <!-- ==== CART ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
-            <svg class="user-menu__icon" width="12" height="12">
+          <a class="user-menu__link" href="#" aria-label="Перейти в корзину товаров">
+            <svg class="user-menu__icon" width="12" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-cart"></use>
             </svg>
             Корзина
@@ -58,38 +55,32 @@
       </ul>
       <!-- ==== USER-MENU END ==== -->
       <!-- ==== MAIN-NAV START ==== -->
-      <nav class="header__nav main-nav">
-        <ul class="main-nav__menu">
-          <li class="main-nav__item main-nav__item--with-dropdown">
+      <nav class="header__nav main-nav" aria-label="Основное меню">
+        <ul class="main-nav__menu" role="menubar">
+          <li class="main-nav__item main-nav__item--hassubmenu">
             <a class="main-nav__link" href="#">Каталог товаров</a>
-            <!-- ==== DROPDOWN START ==== -->
-            <div class="dropdown">
-              <ul class="dropdown__menu">
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link">Моноподы для селфи</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="dropdown__menu">
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="dropdown__menu">
-                <li class="dropdown__item">
-                  <a class="dropdown__link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
-            <!-- ==== DROPDOWN END ==== -->
+            <!-- ==== SUBMENU START ==== -->
+            <ul class="submenu" role="menu">
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link">Моноподы для селфи</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Умные часы</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+            <!-- ==== SUBMENU END ==== -->
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Доставка</a>
@@ -106,61 +97,56 @@
     </header>
     <!-- ==== HEADER END ==== -->
     <main>
-      <h1 class="main-title">Моноподы для селфи</h1>
+      <h1 class="page__title">Моноподы для селфи</h1>
       <!-- ==== BREADCRUMBS START ==== -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link">Моноподы для селфи</a>
-        </li>
-      </ul>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ul class="breadcrumbs__menu" role="menu">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </nav>
       <!-- ==== BREADCRUMBS END ==== -->
       <!-- ==== CATALOG START ==== -->
       <section class="catalog">
         <h2 class="sr-only">Каталог товаров</h2>
-        <!-- ==== SORT START ==== -->
-        <div class="sort">
-          <h2 class="sort__title">Сортировка:</h2>
-          <ul class="sort__list">
-            <li class="sort__item">
-              <a class="sort__link sort__link--active" href="#">По цене</a>
-            </li>
-            <li class="sort__item">
-              <a class="sort__link" href="#">По типу</a>
-            </li>
-            <li class="sort__item">
-              <a class="sort__link" href="#">По популярности</a>
-            </li>
-          </ul>
-          <ul class="sort__list">
-            <li class="sort__item">
-              <a class="sort__link" href="#">
-                <svg class="sort__icon" width="11" height="10">
-                  <use xlink:href="img/sprites/inline.svg#icon-down"></use>
-                </svg>
-                <span class="sr-only">По возростанию</span>
-              </a>
-            </li>
-            <li class="sort__item">
-              <a class="sort__link sort__link--active" href="#">
-                <svg class="sort__icon" width="11" height="10">
-                  <use xlink:href="img/sprites/inline.svg#icon-up"></use>
-                </svg>
-                <span class="sr-only">По убыванию</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- ==== SORT END ==== -->
         <!-- ==== FILTER START ==== -->
         <div class="filter">
-          <h2 class="filter__title">Фильтр:</h2>
+          <h3 class="filter__title">Фильтр:</h3>
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__subtitle">Стоимость</legend>
+              <!-- ==== RANGE-FILTER START ==== -->
+              <div class="range-filter">
+                <div class="range-filter__scale">
+                  <!-- ==== CONTROLS START ==== -->
+                  <!-- ==== MIN ==== -->
+                  <div class="range-filter__control range-filter__control--min" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="0" aria-valuetext="0 rubles" aria-valuemax="5000" aria-label="Минимальная цена">
+                    <svg class="range-filter__icon" width="20" height="22" aria-hidden="true">
+                      <use xlink:href="img/sprites/inline.svg#range-control"></use>
+                    </svg>
+                  </div>
+                  <!-- ==== MAX ==== -->
+                  <div class="range-filter__control range-filter__control--max" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="5000" aria-valuetext="5000 rubles" aria-valuemax="10000" aria-label="Максимальная цена">
+                    <svg class="range-filter__icon" width="20" height="22" aria-hidden="true">
+                      <use xlink:href="img/sprites/inline.svg#range-control"></use>
+                    </svg>
+                  </div>
+                  <!-- ==== CONTROLS END ==== -->
+                </div>
+                <label class="range-filter__label" for="min-price">От</label>
+                <input class="range-filter__field" id="min-price" type="number" name="min-price" min="0" max="5000" value="0">
+                <label class="range-filter__label" for="max-price">До</label>
+                <input class="range-filter__field" id="max-price" type="number" name="max-price" min="0" max="10000" value="5000">
+              </div>
+              <!-- ==== RANGE-FILTER END ==== -->
+            </fieldset>
             <!-- ==== COLOR START ==== -->
             <fieldset class="filter__fieldset">
               <legend class="filter__subtitle">Цвет</legend>
@@ -203,10 +189,42 @@
               </ul>
             </fieldset>
             <!-- ==== BLUETOOTH END ==== -->
-            <button class="filter__btn main-btn" type="submit">Показать</button>
+            <button class="filter__btn page__btn" type="submit">Показать</button>
           </form>
         </div>
         <!-- ==== FILTER END ==== -->
+        <!-- ==== SORT START ==== -->
+        <div class="sort">
+          <h3 class="sort__title">Сортировка:</h3>
+          <ul class="sort__menu" role="menu">
+            <li class="sort__item">
+              <a class="sort__link sort__link--active" href="#">По цене</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link" href="#">По типу</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link" href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort__menu" role="menu">
+            <li class="sort__item">
+              <a class="sort__link" href="#" aria-label="По возростанию">
+                <svg class="sort__icon" width="11" height="10" aria-hidden="true">
+                  <use xlink:href="img/sprites/inline.svg#icon-down"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link sort__link--active" href="#" aria-label="По убыванию">
+                <svg class="sort__icon" width="11" height="10" aria-hidden="true">
+                  <use xlink:href="img/sprites/inline.svg#icon-up"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ==== SORT END ==== -->
         <ul class="catalog__list">
           <!-- ==== CARD #1 ==== -->
           <li class="catalog__item card">
@@ -218,7 +236,7 @@
             <p class="card__price">500 руб.</p>
             <ul class="card__menu">
               <li class="card__item">
-                <a class="card__link main-btn" href="#">В корзину</a>
+                <a class="page__btn" href="#">В корзину</a>
               </li>
               <li class="card__item">
                 <a class="card__link" href="#">Добавить к сравнению</a>
@@ -235,7 +253,7 @@
             <p class="card__price">1 500 руб.</p>
             <ul class="card__menu">
               <li class="card__item">
-                <a class="card__link main-btn" href="#">В корзину</a>
+                <a class="page__btn" href="#">В корзину</a>
               </li>
               <li class="card__item">
                 <a class="card__link" href="#">Добавить к сравнению</a>
@@ -252,7 +270,7 @@
             <p class="card__price">2 500 руб.</p>
             <ul class="card__menu">
               <li class="card__item">
-                <a class="card__link main-btn" href="#">В корзину</a>
+                <a class="page__btn" href="#">В корзину</a>
               </li>
               <li class="card__item">
                 <a class="card__link" href="#">Добавить к сравнению</a>
@@ -269,7 +287,7 @@
             <p class="card__price">4 900 руб.</p>
             <ul class="card__menu">
               <li class="card__item">
-                <a class="card__link main-btn" href="#">В корзину</a>
+                <a class="page__btn" href="#">В корзину</a>
               </li>
               <li class="card__item">
                 <a class="card__link" href="#">Добавить к сравнению</a>
@@ -280,7 +298,7 @@
         <!-- ==== PAGINATION START ==== -->
         <ul class="pagination">
           <li class="pagination__item">
-            <a class="pagination__link" href="#">Назад</a>
+            <a class="pagination__btn">Назад</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link pagination__link--active">1</a>
@@ -292,7 +310,7 @@
             <a class="pagination__link" href="#">3</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link" href="#">Вперед</a>
+            <a class="pagination__btn" href="#">Вперед</a>
           </li>
         </ul>
         <!-- ==== PAGINATION END ==== -->
@@ -302,29 +320,29 @@
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
       <!-- ==== LOGO ==== -->
-      <a class="footer__logo logo" href="index.html">
-        <svg width="164" height="35">
+      <a class="footer__logo logo logo--filled" href="index.html" aria-label="Вернуться на Главную">
+        <svg width="164" height="35" role="img" aria-label="Логотип магазина «Девайс»">
           <use xlink:href="img/sprites/inline.svg#logo"></use>
         </svg>
       </a>
       <!-- ==== USER-MENU START ==== -->
-      <ul class="footer__user-menu user-menu">
+      <ul class="footer__user-menu user-menu" role="menu" aria-label="Меню пользователя">
         <!-- ==== USER ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
-            <svg class="user-menu__icon" width="13" height="12">
+          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+            <svg class="user-menu__icon user-menu__icon--filled" width="13" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-user"></use>
             </svg>
             Валентин Петухов
           </a>
         </li>
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">Выйти</a>
+          <a class="user-menu__link user-menu__link--logout" href="#" aria-label="Выйти из личного кабинета">Выйти</a>
         </li>
         <!-- ==== COMPARE ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
-            <svg class="user-menu__icon" width="10" height="10">
+          <a class="user-menu__link" href="#" aria-label="Перейти к сравнению товаров">
+            <svg class="user-menu__icon user-menu__icon--filled" width="10" height="10" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-compare"></use>
             </svg>
             Сравнить
@@ -332,8 +350,8 @@
         </li>
         <!-- ==== CART ==== -->
         <li class="user-menu__item">
-          <a class="user-menu__link" href="#">
-            <svg class="user-menu__icon" width="12" height="12">
+          <a class="user-menu__link" href="#" aria-label="Перейти в корзину товаров">
+            <svg class="user-menu__icon user-menu__icon--filled" width="12" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-cart"></use>
             </svg>
             Корзина
@@ -344,8 +362,8 @@
       <!-- ==== ADDRESS ==== -->
       <address class="footer__address">г. Москва, ул. Строителей, 15</address>
       <!-- ==== MAIN-NAV START ==== -->
-      <nav class="footer__nav main-nav">
-        <ul class="main-nav__menu">
+      <nav class="footer__nav main-nav" aria-label="Дополнительное меню">
+        <ul class="main-nav__menu" role="menu">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Доставка</a>
           </li>
@@ -362,30 +380,27 @@
       <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <!-- ==== SOCIAL START ==== -->
       <div class="social">
-        <h2 class="sr-only">Мы в социальных сетях</h2>
-        <ul class="social__menu">
+        <h3 class="sr-only">Мы в социальных сетях</h3>
+        <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="32" height="32">
+            <a class="social__link" href="#" aria-label="Наш Фейсбук">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
                 <use xlink:href="img/sprites/inline.svg#icon-fb"></use>
               </svg>
-              <span class="sr-only">Наш Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="32" height="32">
+            <a class="social__link" href="#" aria-label="Наш Инстаграм">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
                 <use xlink:href="img/sprites/inline.svg#icon-instagram"></use>
               </svg>
-              <span class="sr-only">Наш Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <svg class="social__icon" width="32" height="32">
+            <a class="social__link" href="#" aria-label="Наш Твиттер">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
                 <use xlink:href="img/sprites/inline.svg#icon-twitter"></use>
               </svg>
-              <span class="sr-only">Наш Твиттер</span>
             </a>
           </li>
         </ul>
@@ -393,11 +408,10 @@
       <!-- ==== SOCIAL END ==== -->
       <!-- ==== DEVELOPER ==== -->
       <address class="developer">
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss" title="«HTML и CSS, уровень 1.»">
-          <svg class="developer__logo" width="27" height="34">
+        <a class="developer__logo logo logo--filled" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница интенсива «HTML и CSS, уровень 1»">
+          <svg width="27" height="34" role="img" aria-label="Логотип «HTML Academy»">
             <use xlink:href="img/sprites/inline.svg#logo-html"></use>
           </svg>
-          <span class="sr-only">HTML Academy</span>
         </a>
       </address>
     </footer>
