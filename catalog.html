@@ -21,18 +21,16 @@
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <!-- ==== USER-MENU START ==== -->
-      <ul class="header__user-menu user-menu" role="menu" aria-label="Меню пользователя">
-        <!-- ==== USER ==== -->
-        <li class="user-menu__item">
-          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+      <ul class="header__user-menu user-menu user-menu--main" role="menu" aria-label="Меню пользователя">
+        <!-- ==== ACCOUNT ==== -->
+        <li class="user-menu__item user-menu__item--account" aria-label="Личный кабинет пользователя">
+          <a class="user-menu__link" href="#">
             <svg class="user-menu__icon" width="13" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-user"></use>
             </svg>
             Валентин Петухов
           </a>
-        </li>
-        <li class="user-menu__item">
-          <a class="user-menu__link user-menu__link--logout" href="#" aria-label="Выйти из личного кабинета">Выйти</a>
+          <a class="user-menu__link user-menu__link--logout" href="#">Выйти</a>
         </li>
         <!-- ==== COMPARE ==== -->
         <li class="user-menu__item">
@@ -57,8 +55,11 @@
       <!-- ==== MAIN-NAV START ==== -->
       <nav class="header__nav main-nav" aria-label="Основное меню">
         <ul class="main-nav__menu" role="menubar">
-          <li class="main-nav__item main-nav__item--hassubmenu">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="#">Каталог товаров</a>
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
+              <use xlink:href="img/sprites/inline.svg#icon-plus"></use>
+            </svg>
             <!-- ==== SUBMENU START ==== -->
             <ul class="submenu" role="menu">
               <li class="submenu__item">
@@ -127,17 +128,17 @@
                 <div class="range-filter__scale">
                   <!-- ==== CONTROLS START ==== -->
                   <!-- ==== MIN ==== -->
-                  <div class="range-filter__control range-filter__control--min" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="0" aria-valuetext="0 rubles" aria-valuemax="5000" aria-label="Минимальная цена">
+                  <button class="range-filter__control range-filter__control--min" aria-label="Минимальная цена">
                     <svg class="range-filter__icon" width="20" height="22" aria-hidden="true">
                       <use xlink:href="img/sprites/inline.svg#range-control"></use>
                     </svg>
-                  </div>
+                  </button>
                   <!-- ==== MAX ==== -->
-                  <div class="range-filter__control range-filter__control--max" role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="5000" aria-valuetext="5000 rubles" aria-valuemax="10000" aria-label="Максимальная цена">
+                  <button class="range-filter__control range-filter__control--max" aria-label="Максимальная цена">
                     <svg class="range-filter__icon" width="20" height="22" aria-hidden="true">
                       <use xlink:href="img/sprites/inline.svg#range-control"></use>
                     </svg>
-                  </div>
+                  </button>
                   <!-- ==== CONTROLS END ==== -->
                 </div>
                 <label class="range-filter__label" for="min-price">От</label>
@@ -326,18 +327,16 @@
         </svg>
       </a>
       <!-- ==== USER-MENU START ==== -->
-      <ul class="footer__user-menu user-menu" role="menu" aria-label="Меню пользователя">
-        <!-- ==== USER ==== -->
-        <li class="user-menu__item">
-          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+      <ul class="footer__user-menu user-menu user-menu--additional" role="menu" aria-label="Меню пользователя">
+        <!-- ==== ACCOUNT ==== -->
+        <li class="user-menu__item user-menu__item--account" aria-label="Личный кабинет пользователя">
+          <a class="user-menu__link" href="#">
             <svg class="user-menu__icon user-menu__icon--filled" width="13" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-user"></use>
             </svg>
             Валентин Петухов
           </a>
-        </li>
-        <li class="user-menu__item">
-          <a class="user-menu__link user-menu__link--logout" href="#" aria-label="Выйти из личного кабинета">Выйти</a>
+          <a class="user-menu__link user-menu__link--logout" href="#">Выйти</a>
         </li>
         <!-- ==== COMPARE ==== -->
         <li class="user-menu__item">
@@ -377,7 +376,7 @@
       </nav>
       <!-- ==== MAIN-NAV END ==== -->
       <!-- ==== PHONE ==== -->
-      <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      <a class="footer__phone" href="tel:+74954959595" aria-label="Позвоните нам">Тел.: +7 (495) 495-95-95</a>
       <!-- ==== SOCIAL START ==== -->
       <div class="social">
         <h3 class="sr-only">Мы в социальных сетях</h3>
@@ -416,5 +415,6 @@
       </address>
     </footer>
     <!-- ==== FOOTER END ==== -->
+    <script src="js/main.js"></script>
   </body>
 </html>

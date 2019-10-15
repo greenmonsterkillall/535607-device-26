@@ -21,10 +21,10 @@
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <!-- ==== USER-MENU START ==== -->
-      <ul class="header__user-menu user-menu" role="menu" aria-label="Меню пользователя">
-        <!-- ==== USER ==== -->
-        <li class="user-menu__item">
-          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+      <ul class="header__user-menu user-menu user-menu--main" role="menu" aria-label="Меню пользователя">
+        <!-- ==== ACCOUNT ==== -->
+        <li class="user-menu__item user-menu__item--account" aria-label="Личный кабинет пользователя">
+          <a class="user-menu__link" href="#">
             <svg class="user-menu__icon" width="13" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-user"></use>
             </svg>
@@ -54,8 +54,11 @@
       <!-- ==== MAIN-NAV START ==== -->
       <nav class="header__nav main-nav" aria-label="Основное меню">
         <ul class="main-nav__menu" role="menubar">
-          <li class="main-nav__item main-nav__item--hassubmenu">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="#">Каталог товаров</a>
+            <svg class="main-nav__icon" width="16" height="16" aria-hidden="true">
+              <use xlink:href="img/sprites/inline.svg#icon-plus"></use>
+            </svg>
             <!-- ==== SUBMENU START ==== -->
             <ul class="submenu" role="menu">
               <li class="submenu__item">
@@ -268,15 +271,15 @@
         <!-- ==== CONTROLS END ==== -->
         <!-- ==== TABS START ==== -->
         <ol class="services__tabs">
-          <li class="services__tab services__tab--active">
+          <li class="services__tab services__tab--delivery services__tab--active">
             <h3 class="services__title page__title">Доставка</h3>
             <p class="services__text page__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="services__tab">
+          <li class="services__tab services__tab--warranty">
             <h3 class="services__title page__title">Гарантия</h3>
             <p class="services__text page__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
-          <li class="services__tab">
+          <li class="services__tab services__tab--credit">
             <h3 class="services__title page__title">Кредит</h3>
             <p class="services__text page__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
@@ -299,7 +302,7 @@
           </li>
           <!-- ==== ITEM #2 ==== -->
           <li class="brands__item">
-            <a class="brands__link brands__link--sp" href="#" aria-label="Сайт Sp Gadgets">
+            <a class="brands__link brands__link--sp-gadgets" href="#" aria-label="Сайт Sp Gadgets">
               <picture class="brands__img">
                 <source type="image/webp" srcset="img/brands/sp-gadgets-logo.webp, img/brands/sp-gadgets-logo@2x.webp 2x, img/brands/sp-gadgets-logo@3x.webp 3x">
                 <img src="img/brands/sp-gadgets-logo.jpg" srcset="img/brands/sp-gadgets-logo@2x.jpg 2x, img/brands/sp-gadgets-logo@3x.jpg 3x" width="260" height="100" alt="Логотип «Sp Gadgets»">
@@ -401,7 +404,6 @@
         </section>
         <!-- ==== CONTACTS END ==== -->
       </div>
-      <!-- ==== INFO END ==== -->
     </main>
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
@@ -412,10 +414,10 @@
         </svg>
       </a>
       <!-- ==== USER-MENU START ==== -->
-      <ul class="footer__user-menu user-menu" role="menu" aria-label="Меню пользователя">
-        <!-- ==== USER ==== -->
-        <li class="user-menu__item">
-          <a class="user-menu__link" href="#" aria-label="Личный кабинет пользователя">
+      <ul class="footer__user-menu user-menu user-menu--additional" role="menu" aria-label="Меню пользователя">
+        <!-- ==== ACCOUNT ==== -->
+        <li class="user-menu__item user-menu__item--account" aria-label="Личный кабинет пользователя">
+          <a class="user-menu__link" href="#">
             <svg class="user-menu__icon user-menu__icon--filled" width="13" height="12" aria-hidden="true">
               <use xlink:href="img/sprites/inline.svg#icon-user"></use>
             </svg>
@@ -499,5 +501,6 @@
       </address>
     </footer>
     <!-- ==== FOOTER END ==== -->
+    <script src="js/main.js"></script>
   </body>
 </html>
