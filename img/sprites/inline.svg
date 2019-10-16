@@ -54,4 +54,12 @@
   <symbol id="icon-up" viewBox="0 0 11 10">
     <path d="M5.5 10L0 0h11"/>
   </symbol>
+  <symbol id="icon-plus" viewBox="0 0 16 16">
+    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/>
+  </symbol>
+  <symbol id="range-control" viewBox="0 0 20 23">
+      <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
+      <circle cx="10" cy="10" r="10" fill="#FFF"/>
+      <circle cx="10" cy="10" r="2" fill="#ABABAB"/>
+  </symbol>
 </svg>
