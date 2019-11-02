@@ -248,7 +248,6 @@
           </form>
         </div>
         <!-- ==== FILTER END ==== -->
-        <div class="catalog__inner">
         <!-- ==== SORT START ==== -->
         <div class="sort">
           <h3 class="sort__title">Сортировка:</h3>
@@ -263,7 +262,7 @@
               <a class="sort__link" href="#">По популярности</a>
             </li>
           </ul>
-          <ul class="sort__menu sort__menu--direction">
+          <ul class="sort__menu" role="menu">
             <li class="sort__item">
               <a class="sort__link" href="#" aria-label="По возростанию">
                 <svg class="sort__icon" width="11" height="10" aria-hidden="true">
@@ -370,10 +369,8 @@
           </li>
         </ul>
         <!-- ==== PAGINATION END ==== -->
-      </div>
       </section>
       <!-- ==== CATALOG END ==== -->
-      <!-- </div> -->
     </main>
     <!-- ==== FOOTER START ==== -->
     <footer class="footer">
@@ -475,9 +472,32 @@
                 <use xlink:href="#logo-html"></use>
               </svg>
             </a>
-          </address>
-        </div>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Наш Инстаграм">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprites/inline.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Наш Твиттер">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprites/inline.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
+      <!-- ==== SOCIAL END ==== -->
+      <!-- ==== DEVELOPER ==== -->
+      <address class="developer">
+        <a class="developer__logo logo logo--filled" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница интенсива «HTML и CSS, уровень 1»">
+          <svg width="27" height="34" role="img" aria-label="Логотип «HTML Academy»">
+            <use xlink:href="img/sprites/inline.svg#logo-html"></use>
+          </svg>
+        </a>
+      </address>
     </footer>
     <!-- ==== FOOTER END ==== -->
     <script src="js/main.min.js"></script>

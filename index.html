@@ -259,12 +259,12 @@
       </section>
       <!-- ==== CAROUSEL END ==== -->
       <!-- ==== POPULAR START ==== -->
-      <section class="popular container">
+      <section class="popular">
         <h2 class="sr-only">Популярные категории</h2>
         <ul class="popular__list">
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <div class="popular__icon popular__icon--vr">
+              <div class="popular__icon">
                 <svg width="97" height="55" aria-hidden="true">
                   <use xlink:href="#popular-vr"></use>
                 </svg>
@@ -274,7 +274,7 @@
           </li>
           <li class="popular__item">
             <a class="popular__link" href="catalog.html">
-              <div class="popular__icon popular__icon--monopod">
+              <div class="popular__icon">
                 <svg width="86" height="117" aria-hidden="true">
                   <use xlink:href="#popular-monopod"></use>
                 </svg>
@@ -284,7 +284,7 @@
           </li>
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <div class="popular__icon popular__icon--camera">
+              <div class="popular__icon">
                 <svg width="71" height="87" aria-hidden="true">
                   <use xlink:href="#popular-camera"></use>
                 </svg>
@@ -294,7 +294,7 @@
           </li>
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <div class="popular__icon popular__icon--band">
+              <div class="popular__icon">
                 <svg width="107" height="65" aria-hidden="true">
                   <use xlink:href="#popular-band"></use>
                 </svg>
@@ -304,15 +304,17 @@
           </li>
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <div class="popular__icon popular__icon--watches">
+              <div class="popular__icon">
                 <svg width="56" height="98" aria-hidden="true">
                   <use xlink:href="#popular-watches"></use>
                 </svg>
-              </div>Умные часы</a>
+              </div>
+              Умные часы
+            </a>
           </li>
           <li class="popular__item">
             <a class="popular__link" href="#">
-              <div class="popular__icon popular__icon--copter">
+              <div class="popular__icon">
                 <svg width="132" height="69" aria-hidden="true">
                   <use xlink:href="#popular-copter"></use>
                 </svg>
@@ -362,7 +364,7 @@
       </section>
       <!-- ==== SERVICES END ==== -->
       <!-- ==== BRANDS START ==== -->
-      <section class="brands container">
+      <section class="brands">
         <h2 class="sr-only">Бренды</h2>
         <ul class="brands__list">
           <!-- ==== ITEM #1 ==== -->
@@ -404,7 +406,7 @@
         </ul>
       </section>
       <!-- ==== BRANDS END ==== -->
-      <div class="page__row container">
+      <div class="page__row">
         <!-- ==== ABOUT START ==== -->
         <section class="page__col about">
           <h2 class="page__title about__title">О нас</h2>
@@ -415,7 +417,7 @@
             <li class="about__item">Автотрейдинг</li>
             <li class="about__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="page__btn about__link" href="#">Подробнее о нас</a>
+          <a class="about__link page__btn" href="#">Подробнее о нас</a>
         </section>
         <!-- ==== ABOUT END ==== -->
         <!-- ==== CONTACTS START ==== -->
@@ -491,6 +493,7 @@
             <svg width="164" height="35" role="img" aria-label="Логотип магазина «Девайс»">
               <use xlink:href="#logo"></use>
             </svg>
+            Войти
           </a>
           <!-- ==== USER-MENU START ==== -->
           <ul class="footer__user-menu user-menu user-menu--additional" aria-label="Меню пользователя">
@@ -581,9 +584,32 @@
                 <use xlink:href="#logo-html"></use>
               </svg>
             </a>
-          </address>
-        </div>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Наш Инстаграм">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprites/inline.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Наш Твиттер">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="img/sprites/inline.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
+      <!-- ==== SOCIAL END ==== -->
+      <!-- ==== DEVELOPER ==== -->
+      <address class="developer">
+        <a class="developer__logo logo logo--filled" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Страница интенсива «HTML и CSS, уровень 1»">
+          <svg width="27" height="34" role="img" aria-label="Логотип «HTML Academy»">
+            <use xlink:href="img/sprites/inline.svg#logo-html"></use>
+          </svg>
+        </a>
+      </address>
     </footer>
     <!-- ==== FOOTER END ==== -->
     <script src="js/main.min.js"></script>
