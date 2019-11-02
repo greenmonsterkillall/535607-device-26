@@ -5,4 +5,3 @@ function include(url) {
 }
 
 include('js/svgxuse.js');
-include('js/focus-within-pollyfill.js');
