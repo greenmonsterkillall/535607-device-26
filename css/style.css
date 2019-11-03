@@ -157,15 +157,6 @@ a {
           transition-property: background-color, color, opacity;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 /* ================= *
         PAGE
 * ================== */
@@ -1997,6 +1988,16 @@ input[type="checkbox"]:disabled + .filter__check {
 
   background: none;
   border: none;
+
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.range-filter__field::-webkit-inner-spin-button,
+.range-filter__field::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 /* ================= *
