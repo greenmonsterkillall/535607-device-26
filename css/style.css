@@ -162,7 +162,6 @@ a {
 * ================== */
 .page {
   min-width: 1200px;
-  overflow-x: hidden;
 
   font-weight: 300;
   font-size: 15px;
@@ -1724,12 +1723,16 @@ a {
         CATALOG
 * ================== */
 .catalog {
+  overflow-x: hidden;
+}
+
+.catalog__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.catalog__inner {
+.catalog__main {
   max-width: 870px;
   margin: 0 -20px;
   padding-left: 70px;
